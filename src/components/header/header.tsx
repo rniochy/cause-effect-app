@@ -3,8 +3,8 @@ import './header.css'
 
 function Header () {
    return (
-        <header>
-                <div className="header-container">
+        <header  className="header-container">
+                <div>
                 <h1>Cause Effect</h1>
                 </div>
         </header>

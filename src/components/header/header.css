@@ -1,0 +1,17 @@
+.header-container {
+      height: 10vh;
+      width: 100%;
+      display: flex;
+      border-bottom: 1px solid #ccc;
+}
+.header-container div {
+     margin-left: 3rem;
+}
+.header-container div h1  {
+     font-size: 1.1rem;
+     font-weight: 600;
+     user-select: none;
+}
+
+
+

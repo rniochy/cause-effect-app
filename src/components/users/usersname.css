@@ -1,0 +1,10 @@
+.username-content {
+   
+     display: flex;
+     flex-direction: column;
+}
+
+.username-content  ul li h4 {
+      font-size: .9rem;
+      font-weight: 500;
+}

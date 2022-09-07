@@ -1,8 +1,10 @@
+import './footer.css'
+
 function Footer (){
      return ( 
-            <footer>
+            <footer className="footer-container">
                     <div>
-                         <h3>Footer</h3>
+                         <h3>  Rodrigo Lima - rniochy &copy; </h3>
                     </div>
             </footer> 
 )
