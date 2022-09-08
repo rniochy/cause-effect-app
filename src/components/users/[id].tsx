@@ -18,30 +18,38 @@ function UserData() {
         }
     }, [person])
     return (
-         <div>
-                <ul>{person?.map(person=> person.name)} 
-                <li>
-                   <label>full name</label> 
-                </li>
-                <li>
-                <label>full name</label>
-                </li>
-                <li>
-                <label>full name</label>
-                </li>
-                <li>
-                <label>full name</label>
-                </li>
-                <li>
-                <label>full name</label>
-                </li>
-                <li>
-                <label>full name</label>
-                </li>
-                <li>
-                <label>full name</label>
+         <div className='userdata-container'>
+                {person?.map(person=>
+                <ul>
+                    <li>
+                    <label>full name</label> 
+                    <p>{person.name}</p>
+                    </li>
+                    <li>
+                    <label>Birthday</label>
+                    <p>{person.birthday}</p>
+                    </li>
+                    <li>
+                    <label>Country</label>
+                    <p>{person.country}</p>
+                    </li>
+                    <li>
+                    <label>State</label>
+                    <p>{person.state}</p>
+                    </li>
+                    <li>
+                    <label>Street</label>
+                    <p>{person.street}</p>
+                    </li>
+                    <li>
+                    <label>full name</label>
+                    <p>{person.telephone}</p>
+                    </li>
+                    <li>
+                    <label>full name</label>
                 </li>
                 </ul>
+                )} 
          </div>
     )
 }
