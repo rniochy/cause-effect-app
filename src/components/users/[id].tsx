@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import IUser from '../../util/user';
 import './userdata.css'
 function UserData() {
     const [person, setPerson] = useState<IUser[]>();
+    const navigate = useNavigate();
     const {id} = useParams()
 
     useEffect (()=>{
@@ -16,40 +17,43 @@ function UserData() {
                      setPerson(res.filter((elem:IUser) => String(elem.id) === String(id)))).
                 catch(err=>{});
         }
-    }, [person])
+    }, [person]);
+    const backtoHome = () => {
+         navigate("/");
+    }
     return (
          <div className='userdata-container'>
                 {person?.map(person=>
                 <ul>
                     <li>
-                    <label>full name</label> 
-                    <p>{person.name}</p>
+                        <label>Full name</label> 
+                        <p>{person.name}</p>
                     </li>
                     <li>
-                    <label>Birthday</label>
-                    <p>{person.birthday}</p>
+                        <label>Birthday</label>
+                        <p>{person.birthday}</p>
                     </li>
                     <li>
-                    <label>Country</label>
-                    <p>{person.country}</p>
+                        <label>Country</label>
+                        <p>{person.country}</p>
                     </li>
                     <li>
-                    <label>State</label>
-                    <p>{person.state}</p>
+                        <label>State</label>
+                        <p>{person.state}</p>
                     </li>
                     <li>
-                    <label>Street</label>
-                    <p>{person.street}</p>
+                        <label>Street</label>
+                        <p>{person.street}</p>
                     </li>
                     <li>
-                    <label>full name</label>
-                    <p>{person.telephone}</p>
+                        <label>full name</label>
+                        <p>{person.telephone}</p>
                     </li>
                     <li>
-                    <label>full name</label>
                 </li>
                 </ul>
                 )} 
+                <span><p onClick={backtoHome}>Back</p></span>
          </div>
     )
 }

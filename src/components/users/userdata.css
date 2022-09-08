@@ -1,0 +1,21 @@
+.userdata-container {
+     margin-top: 1rem;
+}
+.userdata-container ul li{
+    margin: 0.5rem 0 0.5rem 0;
+}
+.userdata-container ul li p{
+    color: rgba(19, 189, 132, 0.93);
+}
+.userdata-container ul li label{
+    color: rgb(48, 255, 186);
+}
+.userdata-container span p{
+     text-align: center;
+    font-weight: 900;
+    cursor: pointer;
+    user-select: none;
+}
+.userdata-container span p:hover{
+    font-weight: 700;
+}
