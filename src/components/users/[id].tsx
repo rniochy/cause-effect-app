@@ -3,9 +3,7 @@ import './userdata.css'
 function UserData() {
     return (
          <div>
-                <ul>
-                    <li></li>
-                </ul>
+                <h1>Hello</h1>
          </div>
     )
 }

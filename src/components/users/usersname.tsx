@@ -20,7 +20,7 @@ function UsersName(){
                <h2>USERNAME  .... </h2>
                 <ul>
                     {
-                        people?.map((person, index) => <li key={index}><h4><Link to=''> {person.name}</Link></h4></li>)
+                        people?.map((person, index) => <li key={index}><h4><Link to='/user/:id'> {person.name}</Link></h4></li>)
                     }
                 </ul>
                

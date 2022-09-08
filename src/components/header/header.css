@@ -1,8 +1,10 @@
 .header-container {
-      height: 10vh;
+      height: 5vh;
       width: 100%;
       display: flex;
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid rgb(0, 112, 241);
+
+      margin-top: 1rem;
 }
 .header-container div {
      margin-left: 3rem;
@@ -11,6 +13,7 @@
      font-size: 1.1rem;
      font-weight: 600;
      user-select: none;
+     color: rgb(14, 222, 152);
 }
 
 

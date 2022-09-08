@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Route  } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 import UserData from './components/users/[id]';
 import './App.css';
 import Header from './components/header/header';
@@ -11,10 +11,12 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route path="/" element={<UserData/>} />
-      <Header/>
-      <UsersName/>
-      <Footer/>
+        <Header/>
+        <Routes>
+            <Route path="/user/:id" element={<UserData/>} ></Route>
+            <Route path="/" element={<UsersName/>} ></Route>
+        </Routes>
+        <Footer/>
       </Router>
     </div>
   )
